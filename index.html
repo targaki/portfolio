@@ -1,1 +1,133 @@
-<h1>Hello World!</h1>
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Michał Maniura</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 0;
+      font-size: 3em;
+    }
+
+    .categories {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      background-color: #111;
+    }
+
+    .category {
+      position: relative;
+      width: 50%;
+      overflow: hidden;
+    }
+
+    .category img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.3s ease;
+      display: block;
+    }
+
+    .category:hover img {
+      transform: scale(1.05);
+    }
+
+    .label {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 2em;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+
+    .projects {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #000;
+    }
+
+    .projects h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      background-color: #111;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .gallery-item p {
+      padding: 10px;
+      font-size: 1em;
+    }
+
+    @media (max-width: 768px) {
+      .category {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>Michał Maniura</header>
+
+  <section class="categories">
+    <div class="category">
+      <span class="label">Informatyka</span>
+      <img src="informatyka.jpg" alt="Informatyka">
+    </div>
+    <div class="category">
+      <span class="label">Fotografia</span>
+      <img src="fotografia.jpg" alt="Fotografia">
+    </div>
+  </section>
+
+  <section class="projects">
+    <h2>Moje Projekty</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="projekt1.jpg" alt="Projekt 1">
+        <p>Opis projektu 1</p>
+      </div>
+      <div class="gallery-item">
+        <img src="projekt2.jpg" alt="Projekt 2">
+        <p>Opis projektu 2</p>
+      </div>
+      <div class="gallery-item">
+        <img src="projekt3.jpg" alt="Projekt 3">
+        <p>Opis projektu 3</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
